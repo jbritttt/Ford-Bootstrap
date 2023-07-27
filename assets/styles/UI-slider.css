@@ -1,0 +1,64 @@
+.c-slider {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.btn-wrap {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  width: 90%;
+}
+
+.uk-dotnav li {
+  background-color: #8c8c8c;
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  height: 2.2px;
+  margin-left: 12px;
+  border: none;
+}
+
+.uk-dotnav li a {
+  background-color: #8c8c8c;
+  border: none;
+  width: 0px;
+  height: 0px;
+}
+
+.uk-dotnav > .uk-active {
+  background-color: #102b4e;
+
+  border: none;
+}
+
+.c-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #102b4e;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  margin: 25px;
+}
+
+.c-background:hover {
+  color: white;
+}
+.car-model {
+  position: absolute;
+  top: 60px;
+  left: -50px;
+  width: 150px;
+  text-align: left;
+  line-height: 20px;
+  color: #102b4e;
+  font-size: 16px;
+  font-weight: 400;
+}
