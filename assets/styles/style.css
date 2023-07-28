@@ -1,5 +1,7 @@
 
 
+
+
 .card-img-overlay {
   margin-left: 70px;
 }
@@ -48,6 +50,16 @@ h2 {
   background-color: #fff;
   color: #2a516d;
   box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.1), 0 2rem 2rem 0 rgba(0, 0, 0, 0.1);
+}
+
+
+@media only screen and (min-width: 992px) {
+  .c-logo-image{
+    position:inherit !important;
+   transform:translate(0) !important
+    
+      
+    }
 }
 
 
