@@ -13,7 +13,7 @@ h3 {
 
 h3{
   font-size:16px;
-  color:#4d4d4d
+  
 }
 
 h2 {
@@ -26,7 +26,7 @@ h2 {
   width: 190px auto;
   padding: 5px 30px 5px 30px;
   transition: 0.3s;
-  color: #2a516d;
+  
   font-size: 18px;
   font-weight: 400;
   box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.1);
@@ -35,7 +35,7 @@ h2 {
 
 .c-btn-2 {
   background-color: transparent;
-  color: #fff;
+  
   
 }
 
