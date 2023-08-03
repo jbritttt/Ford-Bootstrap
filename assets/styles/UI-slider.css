@@ -1,3 +1,9 @@
+
+.uk-slider-nav{
+
+  display:none
+}
+
 .c-slider {
   width: 90%;
   margin: auto;
@@ -53,7 +59,7 @@
 }
 .car-model {
   position: absolute;
-  top: 60px;
+  top: 100px;
   left: -50px;
   width: 150px;
   text-align: left;
@@ -61,4 +67,28 @@
  
   font-size: 16px;
   font-weight: 400;
+}
+
+@media only screen and (min-width: 430px) {
+  .car-model {
+   
+    top: 120px;
+  
+  }
+}
+
+@media only screen and (min-width: 630px) {
+  .uk-slider-nav{
+
+    display:flex
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+.car-model {
+
+  top: 60px;
+
+}
 }

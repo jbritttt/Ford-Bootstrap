@@ -1,6 +1,10 @@
+.card-body {
+  top: -50px;
+}
 
-
-
+.card-body p {
+  display: none;
+}
 
 .card-img-overlay {
   margin-left: 70px;
@@ -11,32 +15,29 @@ h3 {
   font-family: "Ford Antenna Cond", Arial, Helvetica, sans-serif;
 }
 
-h3{
-  font-size:16px;
-  
+h3 {
+  font-size: 16px;
 }
 
 h2 {
-  font-size: 45px;
+  font-size: 25px;
   font-weight: 300;
-  line-height: 70px;
+  line-height: 40px;
 }
 
 .rounded-pill {
   width: 190px auto;
   padding: 5px 30px 5px 30px;
   transition: 0.3s;
-  
+
   font-size: 18px;
   font-weight: 400;
   box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.1);
-  
 }
 
 .c-btn-2 {
   background-color: transparent;
-  
-  
+  display: none;
 }
 
 .c-btn-2:hover {
@@ -52,14 +53,33 @@ h2 {
   box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.1), 0 2rem 2rem 0 rgba(0, 0, 0, 0.1);
 }
 
-
-@media only screen and (min-width: 992px) {
-  .c-logo-image{
-    position:inherit !important;
-   transform:translate(0) !important
-    
-      
-    }
+@media only screen and (min-width: 440px) {
+  h2 {
+    font-size: 45px;
+    line-height: 70px;
+  }
 }
 
+@media only screen and (min-width: 826px) {
+  .card-body {
+    top: 0;
+  }
+  .c-btn-2 {
+    display: inline;
+  }
 
+  .card-body p {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .c-logo-image {
+    position: inherit !important;
+    transform: translate(0) !important;
+  }
+
+  .c-burger {
+    display: none !important;
+  }
+}
