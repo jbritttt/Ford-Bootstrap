@@ -1,363 +1,744 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
     <title>Document</title>
-    
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-   
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.9/dist/js/uikit.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.9/dist/css/uikit.min.css">
-  
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.9/dist/js/uikit.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.16.9/dist/css/uikit.min.css"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/UI-slider.css" />
+
  
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="assets/styles/style.css">
-<link rel="stylesheet" href="assets/styles/UI-slider.css">
+  </head>
 
-<style>body{ padding:0;
-margin:0}</style>
+  <body
+    style="
+      line-height: 32px;
+      font-family: FordAntennaCond, Arial, Helvetica, sans-serif;
+    "
+  >
+    <header
+      class="sticky-top bg-light d-flex justify-content-between d-lg-block"
+    >
+      <div
+        class="md-display-none uk-margin-small-right uk-hidden@m d-flex ms-4 c-burger"
+        data-uk-navbar-toggle-icon
+        data-uk-toggle="target: #offcanvas-usage"
+      ></div>
 
-</head>
+      <div id="offcanvas-usage" data-uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+          <div class="uk-offcanvas-close" data-uk-close></div>
 
+          <h3>Title</h3>
 
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
 
-<body style="line-height:32px; font-family:FordAntennaCond,Arial, Helvetica, sans-serif;">
-    
+      <div
+        class="d-flex justify-content-between align-items-center ps-lg-5 pe-lg-5 border-bottom"
+        style="height: 60px"
+      >
+        <img
+          class="c-logo-image position-absolute top-50 start-50 translate-middle"
+          src="assets\images\ford_oval_blue_logo.svg"
+          alt=""
+        />
+        <ul
+          class="d-flex justify-content-sm-between justify-content-lg-space-evenly align-items-center m-0 p-2 list-unstyled text-secondary"
+          style="font-size: 14px"
+        >
+          <li class="ps-4 d-none d-lg-block">Shop Ford</li>
+          <li class="ps-4 d-none d-lg-block">Business Customer</li>
+          <li class="ps-4 d-none d-lg-block">Vans & Pickups</li>
+          <li class="ps-4 d-none d-lg-block">Log In / Register</li>
+          <li class="me-2 ps-lg-4">Search</li>
+        </ul>
+      </div>
 
-<header class="sticky-top bg-light d-flex justify-content-between d-lg-block">
-  <div class="md-display-none uk-margin-small-right uk-hidden@m d-flex ms-4 c-burger" data-uk-navbar-toggle-icon data-uk-toggle="target: #offcanvas-usage"
-  ></div>
+      <nav class="d-none d-lg-block">
+        <ul
+          class="d-flex justify-content-sm-center justify-content-lg-space-evenly align-items-center m-0 p-2 list-unstyled"
+          style="height: 80px; font-size: 12px"
+        >
+          <li class="ps-4 pe-4 border-end">
+            <a class="text-primary text-decoration-none" href="">VEHICLES</a>
+          </li>
+          <li class="ps-4 pe-4 border-end">
+            <a class="text-primary text-decoration-none" href=""
+              >FINANCE & PROMOTIONS</a
+            >
+          </li>
+          <li class="ps-4 pe-4 border-end">
+            <a class="text-primary text-decoration-none" href=""
+              >ELECTRIC & HYBRID</a
+            >
+          </li>
+          <li class="ps-4 pe-4 border-end">
+            <a class="text-primary text-decoration-none" href="">TECHNOLOGY</a>
+          </li>
+          <li class="ps-4 pe-4 border-end">
+            <a class="text-primary text-decoration-none" href="">OWNERS</a>
+          </li>
+          <li class="ps-4">
+            <a class="text-primary text-decoration-none" href=""> SUPPORT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <div id="offcanvas-usage" data-uk-offcanvas>
-    <div class="uk-offcanvas-bar">
-      <div class="uk-offcanvas-close" data-uk-close></div>
+    <main>
+      <section>
+        <article class="card text-light border-0" style="width: 100%">
+          <picture>
+            <source
+              media="(min-width:650px)"
+              class="card-img rounded-0"
+              srcset="
+                assets\images\ford-eu-cx740s-homepage-NextGen_Desktop-21x9-2160x925-bb.jpg.renditions.extra-large.jpeg
+              "
+            />
 
-      <h3>Title</h3>
+            <source
+              media="(min-width:300px)"
+              class="card-img rounded-0"
+              srcset="
+                assets\images\ford-eu-cx740s-homepage-NextGen_Desktop-21x9-2160x925-bb.jpg.renditions.extra-small.jpeg
+              "
+            />
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-        enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat.
-      </p>
+            <img
+              class="card-img rounded-0"
+              src="assets\images\ford-eu-cx740s-homepage-NextGen_Desktop-21x9-2160x925-bb.jpg.renditions.extra-large.jpeg"
+              alt="..."
+            />
+          </picture>
+
+          <div class="card-body card-img-overlay mt-4">
+            <h2 class="card-title mt-5">
+              NEW ALL-ELECTRIC <span class="fw-bold"> EXPLORER</span>
+            </h2>
+
+            <a
+              href="#"
+              class="btn btn-primary border rounded-pill bg-light c-btn-1 text-primary"
+              >Explore More</a
+            >
+          </div>
+        </article>
+
+        <article class="card text-light border-0" style="width: 100%">
+          <picture>
+            <source
+              media="(min-width:650px)"
+              class="card-img rounded-0"
+              srcset="
+                assets\images\Ford-CX727-EU-49853_34rear_mountain_storm_bplate_w_chalk-21x9-2160x925-BB-Backend_moody_storm.jpg.renditions.extra-large.jpeg
+              "
+            />
+
+            <source
+              media="(min-width:300px)"
+              class="card-img rounded-0"
+              srcset="
+                assets\images\Ford-CX727-EU-49853_34rear_mountain_storm_bplate_w_chalk-21x9-2160x925-BB-Backend_moody_storm.jpg.renditions.extra-small.jpeg
+              "
+            />
+
+            <img
+              src="assets\images\Ford-CX727-EU-49853_34rear_mountain_storm_bplate_w_chalk-21x9-2160x925-BB-Backend_moody_storm.jpg.renditions.extra-large.jpeg"
+              class="card-img rounded-0"
+              alt="..."
+            />
+          </picture>
+
+          <div class="card-body card-img-overlay mt-4">
+            <h2 class="card-title mt-5">
+              ALL-ELECTRIC <span class="fw-bold">MUSTANG MACH-E</span>
+            </h2>
+            <p class="card-text fs-4 fw-bold mt-0 mb-4">
+              0% APR on 4 Year Ford Options*
+            </p>
+            <a
+              href="#"
+              class="btn btn-primary border rounded-pill bg-light c-btn-1 text-primary"
+              >Make It Yours</a
+            >
+            <a
+              href="#"
+              class="btn btn-primary border-2 border-light rounded-pill ms-3 c-btn-2"
+              >View Stock</a
+            >
+          </div>
+        </article>
+
+        <p
+          class="mx-auto text-center fs-2 mt-5 mb-5"
+          style="color: #4d4d4d; line-height: 40px; width: 70%"
+        >
+          *Finance subject to status. Freepost Ford Credit. Excludes Mustang
+          Mach-E GT.
+        </p>
+
+        <article class="card text-light border-0" style="width: 100%">
+          <picture>
+            <source
+              media="(min-width:650px)"
+              class="card-img rounded-0"
+              srcset="
+                assets\images\ford-puma-eu-3_BX726_M_L_55078-21x9-2160x925_MB.jpg.renditions.extra-large.jpeg
+              "
+            />
+
+            <source
+              media="(min-width:300px)"
+              class="card-img rounded-0"
+              srcset="
+                assets\images\ford-puma-eu-3_BX726_M_L_55078-21x9-2160x925_MB.jpg.renditions.extra-small.jpeg
+              "
+            />
+
+            <img
+              src="assets\images\ford-puma-eu-3_BX726_M_L_55078-21x9-2160x925_MB.jpg.renditions.extra-large.jpeg"
+              class="card-img rounded-0"
+              alt="..."
+            />
+          </picture>
+
+          <div class="card-body card-img-overlay mt-4">
+            <h2 class="card-title mt-5">
+              <span class="fw-bold">FORD PUMA</span>
+            </h2>
+            <p class="card-text fs-4 fw-bold mt-0 mb-4">
+              SMART, ON EVERY LEVEL
+            </p>
+            <a
+              href="#"
+              class="btn btn-primary border rounded-pill bg-light c-btn-1 text-primary"
+              >Build & Price</a
+            >
+            <a
+              href="#"
+              class="btn btn-primary border-2 border-light rounded-pill ms-3 c-btn-2"
+              >View Stock</a
+            >
+          </div>
+        </article>
+
+        <article class="card text-light border-0" style="width: 100%">
+          <picture>
+            <source
+              media="(min-width:650px)"
+              class="card-img rounded-0"
+              srcset="
+                assets\images\ford-homepage-eu-Ford_Kuga_Beauty_Front-21x9_2160X925-hpr-bb.jpg.renditions.extra-large.jpeg
+              "
+            />
+
+            <source
+              media="(min-width:300px)"
+              class="card-img rounded-0"
+              srcset="
+                assets\images\ford-homepage-eu-Ford_Kuga_Beauty_Front-21x9_2160X925-hpr-bb.jpg.renditions.extra-small.jpeg
+              "
+            />
+
+            <img
+              src="assets\images\ford-homepage-eu-Ford_Kuga_Beauty_Front-21x9_2160X925-hpr-bb.jpg.renditions.extra-large.jpeg"
+              class="card-img rounded-0"
+              alt="..."
+            />
+          </picture>
+
+          <div class="card-body card-img-overlay mt-4">
+            <h2 class="card-title mt-5">
+              <span class="fw-bold">FORD KUGA</span>
+            </h2>
+            <p class="card-text fs-4 fw-bold mt-0 mb-4">5-STAR SAFETY</p>
+            <a
+              href="#"
+              class="btn btn-primary border rounded-pill bg-light c-btn-1 text-primary"
+              >Build & Price</a
+            >
+            <a
+              href="#"
+              class="btn btn-primary border-2 border-light rounded-pill ms-3 c-btn-2"
+              >View Stock</a
+            >
+          </div>
+        </article>
+
+        <article class="card text-light border-0" style="width: 100%">
+          <picture>
+            <source
+              media="(min-width:650px)"
+              class="card-img rounded-0"
+              srcset="
+                assets\images\ford-homepage-eu-ETransit_L-21x9-2160x925.jpg.renditions.extra-large.jpeg
+              "
+            />
+
+            <source
+              media="(min-width:300px)"
+              class="card-img rounded-0"
+              srcset="
+                assets\images\ford-homepage-eu-ETransit_L-21x9-2160x925.jpg.renditions.extra-small.jpeg
+              "
+            />
+
+            <img
+              src="assets\images\ford-homepage-eu-ETransit_L-21x9-2160x925.jpg.renditions.extra-large.jpeg"
+              class="card-img rounded-0 mb-5"
+              alt="..."
+            />
+          </picture>
+
+          <div class="card-body card-img-overlay mt-4">
+            <h2 class="card-title mt-5">
+              <span class="fw-bold">FORD E-TRANSIT</span>
+            </h2>
+            <p class="card-text fs-4 fw-bold mt-0 mb-4">BUSINESS ELECTRIFIED</p>
+            <a
+              href="#"
+              class="btn btn-primary border rounded-pill bg-light c-btn-1 text-primary"
+              >Explore Vehicle</a
+            >
+            <a
+              href="#"
+              class="btn btn-primary border-2 border-light rounded-pill ms-3 c-btn-2"
+              >Request a Contact</a
+            >
+          </div>
+        </article>
+      </section>
+
+      <section>
+        <div class="text-center fs-1 mt-4 mb-5 text-primary">
+          <span>VEHICLES FOR EVERY LIFESTYLE</span>
+        </div>
+
+        <div uk-slider="sets: true" class="c-slider">
+          <div
+            class="uk-position-relative uk-visible-toggle uk-light"
+            tabindex="-1"
+          >
+            <ul
+              class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-6@l text-primary"
+            >
+              <li>
+                <img
+                  src="assets\images\ead09964-d1c8-3c01-aa1b-3058c3aef0c5.png"
+                  width="400"
+                  height="600"
+                  alt=""
+                />
+                <div class="uk-position-center uk-panel">
+                  <p class="car-model">FIESTA</p>
+                </div>
+              </li>
+              <li>
+                <img
+                  src="assets\images\e6e6f4f7-24f2-364d-99b9-71af9497c82c.png"
+                  width="400"
+                  height="600"
+                  alt=""
+                />
+                <div class="uk-position-center uk-panel">
+                  <p class="car-model">PUMA</p>
+                </div>
+              </li>
+              <li>
+                <img
+                  src="assets\images\a7a31c2b-2df1-3de0-8f41-230b751f5644.png"
+                  width="400"
+                  height="600"
+                  alt=""
+                />
+                <div class="uk-position-center uk-panel">
+                  <p class="car-model">FOCUS</p>
+                </div>
+              </li>
+              <li>
+                <img
+                  src="assets\images\d202ff3e-dffa-3217-a28f-4b16d81d41c2.png"
+                  width="400"
+                  height="600"
+                  alt=""
+                />
+                <div class="uk-position-center uk-panel">
+                  <p class="car-model">TOURNEO CONNECT</p>
+                </div>
+              </li>
+              <li>
+                <img
+                  src="assets\images\cf14db21-b965-33f4-a8f7-a96d9c3fb608.png"
+                  width="400"
+                  height="600"
+                  alt=""
+                />
+                <div class="uk-position-center uk-panel">
+                  <p class="car-model">KUGA</p>
+                </div>
+              </li>
+              <li>
+                <img
+                  src="assets\images\c95b2fcd-f74b-36da-a55e-0d14fb81e246.png"
+                  width="400"
+                  height="600"
+                  alt=""
+                />
+                <div class="uk-position-center uk-panel">
+                  <p class="car-model">MUSTANG MACH-E</p>
+                </div>
+              </li>
+              <li>
+                <img
+                  src="assets\images\4923c14f-c014-3c86-933a-236fbd42b0cf.png"
+                  width="400"
+                  height="600"
+                  alt=""
+                />
+                <div class="uk-position-center uk-panel">
+                  <p class="car-model">MUSTANG</p>
+                </div>
+              </li>
+              <li>
+                <img
+                  src="assets\images\1b065a55-e69e-3879-9eab-30ab963820f0.png"
+                  width="400"
+                  height="600"
+                  alt=""
+                />
+                <div class="uk-position-center uk-panel">
+                  <p class="car-model">S-MAX</p>
+                </div>
+              </li>
+              <li>
+                <img
+                  src="assets\images\98d2d0cb-8d30-3142-bee3-48c67a83c958.png"
+                  width="400"
+                  height="600"
+                  alt=""
+                />
+                <div class="uk-position-center uk-panel">
+                  <p class="car-model">GALAXY</p>
+                </div>
+              </li>
+              <li>
+                <img
+                  src="assets\images\8565a0aa-f763-3ab6-a604-70d821e8ccc9.png"
+                  width="400"
+                  height="600"
+                  alt=""
+                />
+                <div class="uk-position-center uk-panel">
+                  <p class="car-model">TOURNEO CUSTOM</p>
+                </div>
+              </li>
+              <li>
+                <img
+                  src="assets\images\243dfa23-aa09-336a-a983-b395854c55d8.png"
+                  width="400"
+                  height="600"
+                  alt=""
+                />
+                <div class="uk-position-center uk-panel">
+                  <p class="car-model">ALL-NEW RANGER</p>
+                </div>
+              </li>
+              <li>
+                <img
+                  src="assets\images\ee980c50-00a4-351f-96f5-3fa37ab8a0a1.png"
+                  width="400"
+                  height="600"
+                  alt=""
+                />
+                <div class="uk-position-center uk-panel">
+                  <p class="car-model">ALL-NEW RANGER RAPTOR</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="btn-wrap">
+            <a
+              class="uk-position-small c-background"
+              href="#"
+              uk-slidenav-previous
+              uk-slider-item="previous"
+            ></a>
+            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+            <a
+              class="uk-position-small c-background"
+              href="#"
+              uk-slidenav-next
+              uk-slider-item="next"
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div
+      class="d-flex flex-column flex-md-row justify-content-evenly align-items-center bg-primary"
+      style="height: 170px; margin-top: 10rem"
+    >
+      <a class="text-light fs-5 text-decoration-none" href="#"
+        >Find a Dealer
+        <svg
+          class="ms-3"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="currentColor"
+          class="bi bi-arrow-right-circle"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+          /></svg></a>
+      <a class="text-light fs-5 text-decoration-none" href="#">
+        Build & Price
+        <svg
+          class="ms-3"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="currentColor"
+          class="bi bi-arrow-right-circle"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+          /></svg></a>
+      <a class="text-light fs-5 text-decoration-none" href="#"
+        >Request a Contact
+        <svg
+          class="ms-3"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="currentColor"
+          class="bi bi-arrow-right-circle"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+          /></svg></a>
     </div>
-  </div>
-  
-  <div class="d-flex justify-content-between align-items-center ps-lg-5 pe-lg-5 border-bottom"style="height:60px" >
-    <img class="c-logo-image position-absolute top-50 start-50 translate-middle " src="assets\images\ford_oval_blue_logo.svg" alt="">
-  <ul class="d-flex justify-content-sm-between justify-content-lg-space-evenly align-items-center m-0 p-2 list-unstyled text-secondary" style="font-size:14px">
-    <li class="ps-4 d-none d-lg-block"> Shop Ford</li>
-    <li class="ps-4 d-none d-lg-block">Business Customer</li>
-    <li class="ps-4 d-none d-lg-block">Vans & Pickups</li>
-    <li class="ps-4 d-none d-lg-block">Log In / Register</li>
-    <li class=" me-2 ps-lg-4 ">Search</li>
-   
-  </ul>
 
-</div>
+    <footer>
+      <div class="container text-center mt-5">
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3">
+          <div class="col" style="text-align: left">
+            <h3 class="text-secondary">VEHICLES</h3>
+            <ul class="list-unstyled" style="font-size: 14px">
+              <li>
+                <a href="" class="text-primary text-decoration-none">Cars</a>
+              </li>
+              <li>
+                <a href="" class="text-primary text-decoration-none"
+                  >Vans & Pickups</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-primary text-decoration-none"
+                  >Small Cars</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-primary text-decoration-none"
+                  >Hybrid & Electric</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-primary text-decoration-none">
+                  Family Cars</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-primary text-decoration-none"
+                  >People Carriers</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-primary text-decoration-none"
+                  >Performance Cars</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-primary text-decoration-none">SUVs</a>
+              </li>
+            </ul>
+          </div>
 
+          <div class="col" style="text-align: left">
+            <h3 class="text-secondary">EXPERIENCE FORD</h3>
+            <ul class="list-unstyled" style="font-size: 14px">
+              <li>
+                <a href="" class="text-primary text-decoration-none">
+                  About Ford</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-primary text-decoration-none"
+                  >Motor Shows & Events</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-primary text-decoration-none">
+                  Ford News</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-primary text-decoration-none">Careers</a>
+              </li>
+              <li>
+                <a href="" class="text-primary text-decoration-none">
+                  Sustainability</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-primary text-decoration-none"
+                  >Recycling Your Ford</a
+                >
+              </li>
+            </ul>
+          </div>
 
+          <div class="col" style="text-align: left">
+            <h3 class="text-secondary">CARS</h3>
+            <ul class="list-unstyled" style="font-size: 14px">
+              <li>
+                <a href="" class="text-primary text-decoration-none"> Fiesta</a>
+              </li>
+              <li>
+                <a href="" class="text-primary text-decoration-none">Puma</a>
+              </li>
+              <li>
+                <a href="" class="text-primary text-decoration-none"> Focus</a>
+              </li>
+              <li>
+                <a href="" class="text-primary text-decoration-none">Kuga</a>
+              </li>
+              <li>
+                <a href="" class="text-primary text-decoration-none"> Mach-E</a>
+              </li>
+            </ul>
+          </div>
 
-
-  <nav class="d-none d-lg-block">
-  <ul class="d-flex justify-content-sm-center justify-content-lg-space-evenly align-items-center m-0 p-2 list-unstyled " style="height:80px; font-size:12px;">
-    <li class="ps-4 pe-4 border-end"><a class="text-primary text-decoration-none" href="">VEHICLES</a></li>
-    <li class="ps-4 pe-4 border-end"><a class="text-primary text-decoration-none" href="">FINANCE & PROMOTIONS</a></li>
-    <li class="ps-4 pe-4 border-end"><a class="text-primary text-decoration-none" href="">ELECTRIC & HYBRID</a></li>
-    <li class="ps-4 pe-4 border-end"><a class="text-primary text-decoration-none" href="">TECHNOLOGY</a></li>
-    <li class="ps-4 pe-4 border-end"><a class="text-primary text-decoration-none" href="">OWNERS</a></li>
-    <li class="ps-4"><a class="text-primary text-decoration-none" href=""> SUPPORT</a></li>
-  </ul>
-
-
-</nav>
-</header>
-
-<main>
-
-<article class="card text-light border-0" style="width: 100%">
-
-  <picture>
-
-    <source media="(min-width:650px)" class="card-img rounded-0" srcset="assets\images\ford-eu-cx740s-homepage-NextGen_Desktop-21x9-2160x925-bb.jpg.renditions.extra-large.jpeg">
-
-    <source media="(min-width:300px)" class="card-img rounded-0" srcset="assets\images\ford-eu-cx740s-homepage-NextGen_Desktop-21x9-2160x925-bb.jpg.renditions.extra-small.jpeg">
-
-    <img class="card-img rounded-0" src="assets\images\ford-eu-cx740s-homepage-NextGen_Desktop-21x9-2160x925-bb.jpg.renditions.extra-large.jpeg"  alt="...">
-
-  </picture>
-
-
-  <div class="card-body card-img-overlay mt-4">
-    <h2 class="card-title mt-5">NEW ALL-ELECTRIC <span class="fw-bold"> EXPLORER</span></h2>
-    
-    <a href="#" class="btn btn-primary border rounded-pill bg-light c-btn-1 text-primary">Explore More</a>
-  </div>
-</article>
-
-<article class="card text-light border-0" style="width: 100%;">
-
-  <picture>
-    <source media="(min-width:650px)" class="card-img rounded-0" srcset="assets\images\Ford-CX727-EU-49853_34rear_mountain_storm_bplate_w_chalk-21x9-2160x925-BB-Backend_moody_storm.jpg.renditions.extra-large.jpeg">
-
-    <source media="(min-width:300px)" class="card-img rounded-0" srcset="assets\images\Ford-CX727-EU-49853_34rear_mountain_storm_bplate_w_chalk-21x9-2160x925-BB-Backend_moody_storm.jpg.renditions.extra-small.jpeg">
-
-    <img src="assets\images\Ford-CX727-EU-49853_34rear_mountain_storm_bplate_w_chalk-21x9-2160x925-BB-Backend_moody_storm.jpg.renditions.extra-large.jpeg" class="card-img rounded-0" alt="...">
-
-  </picture>
-
-
-
-
- 
-  <div class="card-body card-img-overlay mt-4 ">
-    <h2 class="card-title mt-5">ALL-ELECTRIC <span class="fw-bold">MUSTANG MACH-E</span></h2>
-    <p class="card-text fs-4 fw-bold mt-0 mb-4">0% APR on 4 Year Ford Options*</p>
-    <a href="#" class="btn btn-primary border rounded-pill bg-light c-btn-1 text-primary">Make It Yours</a>
-    <a href="#" class="btn btn-primary border-2 border-light rounded-pill ms-3 c-btn-2">View Stock</a>
-  </div>
-</article>
-
-<p class="mx-auto text-center fs-2 mt-5 mb-5" style="color:#4D4D4D; line-height:40px; width:70%">*Finance subject to status. Freepost Ford Credit. Excludes Mustang Mach-E GT.</p>
-
-<article class="card text-light border-0" style="width: 100%;">
-
-  <picture>
-    <source media="(min-width:650px)" class="card-img rounded-0" srcset="assets\images\ford-puma-eu-3_BX726_M_L_55078-21x9-2160x925_MB.jpg.renditions.extra-large.jpeg">
-
-    <source media="(min-width:300px)" class="card-img rounded-0" srcset="assets\images\ford-puma-eu-3_BX726_M_L_55078-21x9-2160x925_MB.jpg.renditions.extra-small.jpeg">
-
-    
-    <img src="assets\images\ford-puma-eu-3_BX726_M_L_55078-21x9-2160x925_MB.jpg.renditions.extra-large.jpeg" class="card-img rounded-0" alt="...">
-
-  </picture>
-
-
-
-
-  <div class="card-body card-img-overlay mt-4">
-    <h2 class="card-title mt-5"><span class="fw-bold">FORD PUMA</span></h2>
-    <p class="card-text fs-4 fw-bold mt-0 mb-4">SMART, ON EVERY LEVEL</p>
-    <a href="#" class="btn btn-primary border rounded-pill bg-light c-btn-1 text-primary">Build & Price</a>
-    <a href="#" class="btn btn-primary border-2 border-light rounded-pill ms-3 c-btn-2">View Stock</a>
-  </div>
-</article>
-
-<article class="card text-light border-0" style="width: 100%;">
-
-  <picture>
-    <source media="(min-width:650px)" class="card-img rounded-0" srcset="assets\images\ford-homepage-eu-Ford_Kuga_Beauty_Front-21x9_2160X925-hpr-bb.jpg.renditions.extra-large.jpeg">
-
-    <source media="(min-width:300px)" class="card-img rounded-0" srcset="assets\images\ford-homepage-eu-Ford_Kuga_Beauty_Front-21x9_2160X925-hpr-bb.jpg.renditions.extra-small.jpeg">
-
-    <img src="assets\images\ford-homepage-eu-Ford_Kuga_Beauty_Front-21x9_2160X925-hpr-bb.jpg.renditions.extra-large.jpeg" class="card-img rounded-0" alt="...">
-
-  </picture>
-
- 
-  <div class="card-body card-img-overlay mt-4">
-    <h2 class="card-title mt-5"><span class="fw-bold">FORD KUGA</span></h2>
-    <p class="card-text fs-4 fw-bold mt-0 mb-4">5-STAR SAFETY</p>
-    <a href="#" class="btn btn-primary border rounded-pill bg-light c-btn-1 text-primary">Build & Price</a>
-    <a href="#" class="btn btn-primary border-2 border-light rounded-pill ms-3 c-btn-2">View Stock</a>
-  </div>
-</article>
-
-<article class="card text-light border-0" style="width: 100%;">
-
-  <picture>
-    <source media="(min-width:650px)" class="card-img rounded-0" srcset="assets\images\ford-homepage-eu-ETransit_L-21x9-2160x925.jpg.renditions.extra-large.jpeg">
-
-    <source media="(min-width:300px)" class="card-img rounded-0" srcset="assets\images\ford-homepage-eu-ETransit_L-21x9-2160x925.jpg.renditions.extra-small.jpeg">
-
-    <img src="assets\images\ford-homepage-eu-ETransit_L-21x9-2160x925.jpg.renditions.extra-large.jpeg" class="card-img rounded-0 mb-5" alt="...">
-
-  </picture>
-
-  
-  <div class="card-body card-img-overlay mt-4">
-    <h2 class="card-title mt-5"><span class="fw-bold">FORD E-TRANSIT</span></h2>
-    <p class="card-text fs-4 fw-bold mt-0 mb-4">BUSINESS ELECTRIFIED</p>
-    <a href="#" class="btn btn-primary border rounded-pill bg-light c-btn-1 text-primary">Explore Vehicle</a>
-    <a href="#" class="btn btn-primary border-2 border-light rounded-pill ms-3 c-btn-2">Request a Contact</a>
-  </div>
-</article>
-
-
-<div class="text-center fs-1 mt-4 mb-5 text-primary"><span>VEHICLES FOR EVERY LIFESTYLE</span></div>
-
-<div uk-slider="sets: true" class="c-slider">
-  
-  
-  <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-
-    <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-6@l text-primary">
-          <li>
-              <img src="assets\images\ead09964-d1c8-3c01-aa1b-3058c3aef0c5.png" width="400" height="600" alt="">
-              <div class="uk-position-center uk-panel"><p class="car-model">FIESTA</p></div>
-          </li>
-          <li>
-              <img src="assets\images\e6e6f4f7-24f2-364d-99b9-71af9497c82c.png" width="400" height="600" alt="">
-              <div class="uk-position-center uk-panel"><p class="car-model">PUMA</p></div>
-          </li>
-          <li>
-              <img src="assets\images\a7a31c2b-2df1-3de0-8f41-230b751f5644.png" width="400" height="600" alt="">
-              <div class="uk-position-center uk-panel"><p class="car-model">FOCUS</p></div>
-          </li>
-        <li>
-              <img src="assets\images\d202ff3e-dffa-3217-a28f-4b16d81d41c2.png" width="400" height="600" alt="">
-              <div class="uk-position-center uk-panel"><p class="car-model">TOURNEO CONNECT</p></div>
-          </li>
-          <li>
-              <img src="assets\images\cf14db21-b965-33f4-a8f7-a96d9c3fb608.png" width="400" height="600" alt="">
-              <div class="uk-position-center uk-panel"><p class="car-model">KUGA</p></div>
-          </li>
-          <li>
-              <img src="assets\images\c95b2fcd-f74b-36da-a55e-0d14fb81e246.png" width="400" height="600" alt="">
-              <div class="uk-position-center uk-panel"><p class="car-model">MUSTANG MACH-E</p></div>
-          </li>
-          <li>
-            <img src="assets\images\4923c14f-c014-3c86-933a-236fbd42b0cf.png" width="400" height="600" alt="">
-            <div class="uk-position-center uk-panel"><p class="car-model">MUSTANG</p></div>
-        </li>
-        <li>
-            <img src="assets\images\1b065a55-e69e-3879-9eab-30ab963820f0.png" width="400" height="600" alt="">
-            <div class="uk-position-center uk-panel"><p class="car-model">S-MAX</p></div>
-        </li>
-        <li>
-            <img src="assets\images\98d2d0cb-8d30-3142-bee3-48c67a83c958.png" width="400" height="600" alt="">
-            <div class="uk-position-center uk-panel"><p class="car-model">GALAXY</p></div>
-        </li>
-      <li>
-            <img src="assets\images\8565a0aa-f763-3ab6-a604-70d821e8ccc9.png" width="400" height="600" alt="">
-            <div class="uk-position-center uk-panel"><p class="car-model">TOURNEO CUSTOM</p></div>
-        </li>
-        <li>
-            <img src="assets\images\243dfa23-aa09-336a-a983-b395854c55d8.png" width="400" height="600" alt="">
-            <div class="uk-position-center uk-panel"><p class="car-model">ALL-NEW RANGER</p></div>
-        </li>
-        <li>
-            <img src="assets\images\ee980c50-00a4-351f-96f5-3fa37ab8a0a1.png" width="400" height="600" alt="">
-            <div class="uk-position-center uk-panel"><p class="car-model">ALL-NEW RANGER RAPTOR</p></div>
-        </li>
-      </ul>
-
-      
-  </div>
-  <div class="btn-wrap">
-    <a class="uk-position-small c-background" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
-    <a class="uk-position-small c-background" href="#" uk-slidenav-next uk-slider-item="next"></a>
-  </div>
- </div>
-
-</main>
-  <div class="d-flex flex-column flex-md-row justify-content-evenly align-items-center bg-primary "
-  style="height:170px; margin-top:10rem;">
-      <a class="text-light fs-5 text-decoration-none" href="#">Find a Dealer <svg class="ms-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-      </svg></a>
-      <a class="text-light fs-5 text-decoration-none" href="#"> Build & Price <svg class="ms-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-      </svg></a>
-      <a class="text-light fs-5 text-decoration-none" href="#">Request a Contact <svg class="ms-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-      </svg></a>
-  </div>
-
-
- 
-
-  <div class="container text-center mt-5">
-    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3 ">
-      
-      <div class="col" style="text-align:left">
-        <h3 class="text-secondary">VEHICLES</h3>
-        <ul class="list-unstyled" style="font-size:14px" >
-        <li><a href="" class="text-primary text-decoration-none">Cars</a></li>
-        <li><a href="" class="text-primary text-decoration-none">Vans & Pickups</a></li>
-        <li><a href="" class="text-primary text-decoration-none">Small Cars</a></li>
-        <li><a href="" class="text-primary text-decoration-none">Hybrid & Electric</a></li>
-        <li><a href="" class="text-primary text-decoration-none"> Family Cars</a></li>
-        <li><a href="" class="text-primary text-decoration-none">People Carriers</a></li>
-        <li><a href="" class="text-primary text-decoration-none">Performance Cars</a></li>
-        <li><a href="" class="text-primary text-decoration-none">SUVs</a></li>
-      </ul>
+          <div class="col" style="text-align: left">
+            <ul class="list-unstyled" style="font-size: 14px">
+              <li>
+                <a href="" class="text-primary text-decoration-none">Mustang</a>
+              </li>
+              <li>
+                <a href="" class="text-primary text-decoration-none"
+                  >Tourneo Custom</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-primary text-decoration-none"
+                  >Fiesta ST</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-primary text-decoration-none">Puma ST</a>
+              </li>
+              <li>
+                <a href="" class="text-primary text-decoration-none"
+                  >Focus ST</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-primary text-decoration-none"
+                  >Tourneo Connect</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
 
-      <div class="col" style="text-align:left">
-        <h3 class="text-secondary">EXPERIENCE FORD</h3>
-        <ul class="list-unstyled" style="font-size:14px" >
-        <li><a href="" class="text-primary text-decoration-none"> About Ford</a></li>
-        <li><a href="" class="text-primary text-decoration-none">Motor Shows & Events</a></li>
-        <li><a href="" class="text-primary text-decoration-none"> Ford News</a></li>
-        <li><a href="" class="text-primary text-decoration-none">Careers</a></li>
-        <li><a href="" class="text-primary text-decoration-none"> Sustainability</a></li>
-        <li><a href="" class="text-primary text-decoration-none">Recycling Your Ford</a></li>
-        
-      </ul>
+      <div
+        class="d-flex justify-content-evenly align-items-center mt-4 mb-4 bg-primary"
+        style="height: 80px; padding-left: 7rem; padding-right: 7rem"
+      >
+        <a class="text-light" href="#"><i class="fab fa-facebook-f"></i></a>
+        <a class="text-light" href="#"><i class="fab fa-twitter"></i></a>
+        <a class="text-light" href="#"><i class="fab fa-google"></i></a>
+        <a class="text-light" href="#"><i class="fab fa-instagram"></i></a>
+        <a class="text-light" href="#"><i class="fab fa-linkedin-in"></i></a>
       </div>
 
-      <div class="col" style="text-align:left">
-        <h3 class="text-secondary"> CARS</h3>
-        <ul class="list-unstyled" style="font-size:14px">
-        <li><a href="" class="text-primary text-decoration-none"> Fiesta</a></li>
-        <li><a href="" class="text-primary text-decoration-none">Puma</a></li>
-        <li><a href="" class="text-primary text-decoration-none"> Focus</a></li>
-        <li><a href="" class="text-primary text-decoration-none">Kuga</a></li>
-        <li><a href="" class="text-primary text-decoration-none"> Mach-E</a></li>
-       
-        
-      </ul>
+      <div class="w-75 ms-2">
+        <a href="#" class="text-secondary">Give Us Feedback</a>
+
+        <ul
+          class="d-flex justify-content-evenly align-items-center flex-wrap m-0 list-unstyled"
+          style="font-size: 12px"
+        >
+          <li>
+            <a href="#" class="text-secondary text-decoration-none"
+              >© 2023 Ford Motor Company</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-secondary text-decoration-none"
+              >Contact us</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-secondary text-decoration-none">Sitemap</a>
+          </li>
+          <li>
+            <a href="#" class="text-secondary text-decoration-none"
+              >Accessibility</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-secondary text-decoration-none"
+              >Privacy policy,Terms & Conditions</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-secondary text-decoration-none"
+              >Ford Legal Notices</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-secondary text-decoration-none"
+              >Cookie Preferences</a
+            >
+          </li>
+          <li><img src="assets\images\ford_oval_blue_logo.svg" alt="" /></li>
+        </ul>
       </div>
-    
-      <div class="col" style="text-align:left">
-    
-        <ul class="list-unstyled" style="font-size:14px" >
-        <li><a href="" class="text-primary text-decoration-none">Mustang</a></li>
-        <li><a href="" class="text-primary text-decoration-none">Tourneo Custom</a></li>
-        <li><a href="" class="text-primary text-decoration-none">Fiesta ST</a></li>
-        <li><a href="" class="text-primary text-decoration-none">Puma ST</a></li>
-        <li><a href="" class="text-primary text-decoration-none">Focus ST</a></li>
-        <li><a href="" class="text-primary text-decoration-none">Tourneo Connect</a></li>
-       
-        
-      </ul>
-      </div>
-    
-
-
-     
-    </div>
-  </div>
-
-
-  <div class="d-flex justify-content-evenly align-items-center mt-4 mb-4 bg-primary"
-  style="height:80px; padding-left:7rem; padding-right:7rem">
-      <a class="text-light" href="#"><i class="fab fa-facebook-f"></i></a>
-      <a class="text-light" href="#"><i class="fab fa-twitter"></i></a>
-      <a class="text-light" href="#"><i class="fab fa-google"></i></a>
-      <a class="text-light" href="#"><i class="fab fa-instagram"></i></a>
-      <a class="text-light" href="#"><i class="fab fa-linkedin-in"></i></a>
-      
-  </div>
-    
-  <div class="w-75 ms-2">
-  <a href="#" class="text-secondary">Give Us Feedback</a>
-
-<ul class="d-flex justify-content-evenly align-items-center flex-wrap m-0 list-unstyled" style="font-size:12px">
-  <li><a href="#" class="text-secondary text-decoration-none">© 2023 Ford Motor Company</a></li>
-  <li><a href="#" class="text-secondary text-decoration-none">Contact us</a></li>
-  <li><a href="#" class="text-secondary text-decoration-none">Sitemap</a></li>
-  <li><a href="#" class="text-secondary text-decoration-none">Accessibility</a></li>
-  <li><a href="#" class="text-secondary text-decoration-none">Privacy policy,Terms & Conditions</a></li>
-  <li><a href="#" class="text-secondary text-decoration-none">Ford Legal Notices</a></li>
-  <li><a href="#" class="text-secondary text-decoration-none">Cookie Preferences</a></li>
-  <li><img src="assets\images\ford_oval_blue_logo.svg" alt=""></li>
-</ul>
-</div>
-</body>
+    </footer>
+  </body>
 </html>
